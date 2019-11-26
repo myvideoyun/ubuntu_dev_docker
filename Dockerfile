@@ -56,3 +56,7 @@ RUN sudo apt-get update && \
 RUN sudo apt-get update && \
     sudo apt-get install -y libllvm-9-ocaml-dev libllvm9 llvm-9 llvm-9-dev llvm-9-doc llvm-9-examples llvm-9-runtime && \
     sudo rm -rf var/lib/opt/lists/*
+
+RUN sudo apt-get update && \
+    sudo apt-get install -y clang-tidy && \
+    sudo rm -rf var/lib/opt/lists/*
